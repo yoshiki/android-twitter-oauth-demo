@@ -1,2 +1,3 @@
-This is android demo app for Twitter OAuth using twitter4j.
+This repository is android demo app for Twitter OAuth using twitter4j.
+You must edit CONSUMER_KEY and CONSUMER_SECRET in 'src/com/example/Const.java' before build.
 
