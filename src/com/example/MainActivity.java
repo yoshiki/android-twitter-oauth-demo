@@ -35,6 +35,12 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        // support for Android ICS++
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            android.os.StrictMode.ThreadPolicy policy = new android.os.StrictMode.ThreadPolicy.Builder().permitAll().build();
+            android.os.StrictMode.setThreadPolicy(policy);
+        }
+
         mLoginButton = (Button)findViewById(R.id.login);
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override

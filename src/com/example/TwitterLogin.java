@@ -1,5 +1,6 @@
 package com.example;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.webkit.WebViewClient;
 public class TwitterLogin extends Activity {
     public static final String TAG = TwitterLogin.class.getSimpleName();
 
+    @SuppressLint("SetJavaScriptEnabled")
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.twitter_login);
